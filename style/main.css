@@ -1,0 +1,82 @@
+body{
+    background: #FD5D5D;
+}
+
+canvas{
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+h3, p{
+    margin: 10px;
+    background: #FF8080;
+    color: #FFF7BC;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 200%;
+}
+
+@keyframes rotacion {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+.contenedor{
+    position: relative;
+}
+
+#fondo{
+    width: 1200px;
+    filter: blur(2px) drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.8)) saturate(150%) contrast(120%);
+    z-index: 0;
+}
+
+#saludo{
+    width: 800px;
+    position: absolute;
+    padding-top: 10vh;
+    padding-left: 65vh;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.7));
+    z-index: 1;
+}
+
+#logo{
+    width: 350px;
+    position: absolute;
+    padding: 3vh;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.7));
+    z-index: 2;
+}
+
+#logo-peque{
+    width: 100px;
+    position: absolute;
+    padding-top: 81vh;
+    padding-left: 2vh;
+    z-index: 3;
+    animation: rotacion 5s linear infinite; 
+}
+
+#a0{
+    color: rgba(255, 0, 0, 0);
+}
+
+#a25{
+    color: rgba(255, 0, 0, .25);
+}
+
+#a50{
+    color: rgba(255, 0, 0, .50);
+}
+
+#a75{
+    color: rgba(255, 0, 0, .75);
+}
+
+#a100{
+    color: rgba(255, 0, 0, 1);
+}
